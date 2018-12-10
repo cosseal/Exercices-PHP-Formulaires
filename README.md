@@ -75,3 +75,20 @@ http://php.net/manual/fr/reserved.variables.get.php
 http://php.net/manual/fr/reserved.variables.post.php
 
 
+- Considérations sur la sécurité :
+
+Une bonne façon de sécuriser les données reçues par l'utilisateur est d'utiliser la fonction filter_var()
+Cette fonction accepte en parametre des filtres prédéfinis permettant de "nettoyer" ou valider les données reçues.
+
+Exemple:
+
+$maVar = "dutext<$@";
+$maVarNettoyée = filter_var($maVar,FILTER_SANITIZE_STRING);
+
+Testez ce code pour voir ce que $maVar affiche.
+
+Liens vers la documentation sur php.net :
+
+http://php.net/manual/fr/function.filter-var.php
+http://php.net/manual/fr/filter.filters.sanitize.php
+http://php.net/manual/fr/filter.filters.validate.php
