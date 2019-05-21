@@ -1,4 +1,6 @@
-Consignes :
+#
+# Consignes :
+#
 
 - Dans cet exercice, un fichier html fourni contient un formulaire HTML utilisant la méthode get et envoyant la variable
 fname au script PHP index.php
@@ -9,8 +11,9 @@ méthode post
 - Vous allez modifier par la suite le fichier index.php pour afficher la variable fname envoyée via la méthode post
 
 
-
-Théorie :
+#
+# Théorie :
+#
 
 Une utilisation trés courante de PHP est de récupérer les données envoyées par l'utilisateur afin d'effectuer diverses
 opérations utilisant ces données.
@@ -70,12 +73,12 @@ Le fonctionnement est similaire lorsqu'on utilise $_POST ou $_REQUEST
 
 Liens vers la documentation php.net :
 
-http://php.net/manual/fr/reserved.variables.request.php
-http://php.net/manual/fr/reserved.variables.get.php
-http://php.net/manual/fr/reserved.variables.post.php
+- http://php.net/manual/fr/reserved.variables.request.php
+- http://php.net/manual/fr/reserved.variables.get.php
+- http://php.net/manual/fr/reserved.variables.post.php
 
 
-- Considérations sur la sécurité :
+# Considérations sur la sécurité :
 
 Une bonne façon de sécuriser les données reçues par l'utilisateur est d'utiliser la fonction filter_var()
 Cette fonction accepte en parametre des filtres prédéfinis permettant de "nettoyer" ou valider les données reçues.
@@ -89,6 +92,6 @@ Testez ce code pour voir ce que $maVar affiche.
 
 Liens vers la documentation sur php.net :
 
-http://php.net/manual/fr/function.filter-var.php
-http://php.net/manual/fr/filter.filters.sanitize.php
-http://php.net/manual/fr/filter.filters.validate.php
+- http://php.net/manual/fr/function.filter-var.php
+- http://php.net/manual/fr/filter.filters.sanitize.php
+- http://php.net/manual/fr/filter.filters.validate.php
